@@ -1,0 +1,17 @@
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.displayStyle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 24px;
+}
+
+.css-wb57ya-MuiFormControl-root-MuiTextField-root{
+    margin: 0 24px !important;
+}
