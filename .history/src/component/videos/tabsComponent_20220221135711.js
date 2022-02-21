@@ -2,10 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import themes from "../../utils/themes.json"
 import { useDispatch } from "react-redux";
-import {changeTheme} from '../../store/videos/actions'
 
-export default function TabsComponent({themesData}) {
+export default function TabsComponent({setThemeID,themesData}) {
   const [value, setValue] = React.useState(0);
   const dispatch = useDispatch()
   const handleChange = (event, newValue) => {

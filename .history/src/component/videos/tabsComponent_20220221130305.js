@@ -2,20 +2,19 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { useDispatch } from "react-redux";
-import {changeTheme} from '../../store/videos/actions'
-
-export default function TabsComponent({themesData}) {
+import themes from "../../utils/themes.json"
+import { useSelector } from "react-redux";
+export default function TabsComponent({setThemeID}) {
   const [value, setValue] = React.useState(0);
-  const dispatch = useDispatch()
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+//   const { themesData } = useSelector((state) => state?.themesData);
+//   console.log("themesData", themesData)
   return (
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs value={value} onChange={handleChange} >
-      {themesData.map((theme)=>  <Tab label={theme.name} onClick={dispatch(changeTheme(theme.id))} key={(theme.id)}/>
+      {themes.map((theme)=>  <Tab label={theme.name} onClick={setThemeID(theme.id)} key={(theme.id)}/>
       )}
        
       </Tabs>

@@ -1,13 +1,14 @@
 
+import videos from "../../utils/videos.json"
 import  React,{useState , useEffect} from 'react';
 
-export default function GridVideosComponent({themesId,listeVideo}) {
-    // const [listeVideos, setListeVideos] = useState([]);
+export default function GridVideosComponent({themeID}) {
+    const [listeVideos, setListeVideos] = useState([]);
 
-    console.log(listeVideo)
+    console.log(themeID)
   return (
     <>
-    {listeVideo.filter((vid)=> vid.theme.id === themesId).map((video) => 
+    {videos.filter((vid)=> vid.theme === themeID).map((video) => 
     <div key={video.id}>
     {/* <video width="400"  preload="metadata">
     <source src={video.urlLecture} type="video/mp4" />

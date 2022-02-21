@@ -2,7 +2,6 @@ import axios from "axios";
 import {
     REQUEST_THEMES,
     THEMES_DATA,
-    CHANGE_THEMES,
     CHANGE_VIDEO_CATEGORY
   } from "./actionTypes"
 
@@ -12,12 +11,7 @@ import {
     payload: videos,
   
   })
-  export const changeTheme = theme => ({
 
-    type: CHANGE_THEMES,
-    payload: theme,
-  
-  })
   export const requestThemes = (data) => async (dispatch) => {
     dispatch({
       type: REQUEST_THEMES,
