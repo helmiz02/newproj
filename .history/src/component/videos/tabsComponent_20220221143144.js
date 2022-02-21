@@ -10,8 +10,11 @@ import { useDispatch } from 'react-redux'
   const dispatch = useDispatch()
 
   const handleChange = (event, newValue) => {
+    console.log(value)
+    
     setValue(newValue);
- 
+  
+
   };
 
   return (

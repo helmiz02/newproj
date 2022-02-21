@@ -1,6 +1,5 @@
 .imgContainer{
   position: relative;
-  width: 350px;
 }
 .Rectangle {
     width: 340px;
@@ -10,13 +9,12 @@
   }
 
   .Rectangle-Copy-2 {
-    width: 92%;
-    height: 24px;
+    width: 340px;
+    height: 30px;
     padding: 8px 7px 8px 10px;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     bottom: 24px;
-    margin: 0 12px;
   }
 
   .Inauguration-batimen {

@@ -1,0 +1,20 @@
+.footerContainer {
+    width: 1440px;
+    height: 48px;
+
+    padding: 37px 24px 36px 947px;
+    background-color: #575757;
+  }
+
+  .Copyright-Dassault-A {
+    width: 469px;
+    height: 18px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }

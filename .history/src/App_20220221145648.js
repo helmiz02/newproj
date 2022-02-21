@@ -7,7 +7,7 @@ import Videos from './component/videos';
 
 function App() {
   return (
-    <div >
+    <div style={{width:"100%"}}>
      <Header />
      <Divider />
      <Videos />

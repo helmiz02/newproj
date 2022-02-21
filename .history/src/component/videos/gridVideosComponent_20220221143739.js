@@ -7,11 +7,9 @@ export default function GridVideosComponent({themesId,listeVideo}) {
   return (
     <>
     {listeVideo.filter((vid)=> vid.theme.id === themesId).map((video) => 
-    <div key={video.id} className="imgContainer" >
-    <img src={video.logo} alt={video.title} className="Rectangle" />
-    <div class="Rectangle-Copy-2">
-       <span className="Inauguration-batimen"> {video.title} </span>
-    </div>
+    <div key={video.id}>
+    <img src={video.logo} alt={video.title} className="Rectangle">  <div class="Rectangle-Copy-2"> <span> {video.title} </span></div></img> 
+   
     </div>
     )}
 

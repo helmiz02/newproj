@@ -1,0 +1,14 @@
+.Rectangle {
+    width: 340px;
+    height: 191px;
+    margin: 69px 20px 20px 10px;
+    padding: 5px 0 0;
+  }
+
+  .Rectangle-Copy-2 {
+    width: 340px;
+    height: 30px;
+    margin: 126px 0 0;
+    padding: 8px 7px 8px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
